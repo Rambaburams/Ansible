@@ -7,7 +7,7 @@
       name: nginx
       state: present
 
-  - nmae: start nginx
+  - name: start nginx
     ansible.builtin.service:
       name: nginx
       state: started # to start the nginx
