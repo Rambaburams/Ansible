@@ -1,5 +1,5 @@
 - name: "ping the server"
-  hosts: frontenf #which server we want to connect
+  hosts: frontend #which server we want to connect
   #list of tasks what you want to do
   tasks:
   - name: ping 
