@@ -9,5 +9,5 @@
 
   -nmae: start nginx
     name: nginx
-    state: started
-    enabled: yes
+    state: started # to start the nginx
+    enabled: yes 
