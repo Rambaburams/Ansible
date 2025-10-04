@@ -1,0 +1,13 @@
+- name: install nginx and start nginx
+  host: 172.31.26.105
+  become: yes # excute as root 
+  tasks:
+  -name: install nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present
+
+  -nmae: start nginx
+    name: nginx
+    state: started
+    enabled: yes
