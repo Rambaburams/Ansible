@@ -1,6 +1,21 @@
-- name: install nginx and start nginx
+# - name: install and start nginx
+#   hosts: frontend
+#   become: yes # excute as root 
+#   tasks:
+#   - name: install nginx
+#     ansible.builtin.package:
+#       name: nginx
+#       state: present
+
+#   - name: start nginx
+#     ansible.builtin.service:
+#       name: nginx
+#       state: started # to start the nginx
+#       enabled: yes 
+
+- name: install and start nginx
   hosts: frontend
-  become: yes # excute as root 
+  become: yes
   tasks:
   - name: install nginx
     ansible.builtin.package:
@@ -10,5 +25,5 @@
   - name: start nginx
     ansible.builtin.service:
       name: nginx
-      state: started # to start the nginx
-      enabled: yes 
+      state: started
+      enabled: yes
