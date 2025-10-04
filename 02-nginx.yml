@@ -1,5 +1,5 @@
 - name: install nginx and start nginx
-  host: 172.31.26.105
+  host: frontend
   become: yes # excute as root 
   tasks:
   - name: install nginx
