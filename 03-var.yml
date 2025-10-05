@@ -8,4 +8,7 @@
   - name: play01 and task02
     ansible.builtin.debug:
       msg: "helo im executing the play1 task02"
-  
+  tasks:
+  - name: play2 and task-1
+    ansible.builtin.debug:
+      msg: "this is play-2 and task1"
