@@ -10,4 +10,4 @@
     vars:
       course: Ansible
     ansible.builtin.debug:
-      msg: "Course name is: {{course}}, and duration is : {{Duration}}, tranier is {{tarnier}}"
+      msg: "Course name is: {{course}}, and duration is : {{Duration}}, tranier is {{tranier}}"
