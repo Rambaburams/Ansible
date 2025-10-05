@@ -4,7 +4,7 @@
 
   tasks:
   - name: install dependenices
-    ansible.builtin.debug:
+    ansible.builtin.package:
       name: "{{item}}"
       state: present
     loop:
