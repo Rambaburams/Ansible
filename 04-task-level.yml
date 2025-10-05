@@ -2,12 +2,12 @@
   hosts: local
   connection: local
   vars:
-    course: DevOps
+    course: DevOps with aws
     Duration: 10hrs
     tranier: Ram
   tasks:
   - name: print the course info
-    vars:
-      course: Ansible
+    # vars:
+    #   course: Ansible
     ansible.builtin.debug:
-      msg: "Course name is: {{course}}, and duration is : {{Duration}}, tranier is {{tranier}}"
+      msg: "Course name is: {{course}}, and duration is : {{Duration}}, tranier name is {{tranier}}"
