@@ -1,13 +1,13 @@
-- name: variables from promt
+- name: variables from prompt
   hosts: local
   connection: local
-  vars_promt:
+  vars_prompt:
   - name: username
-    promt: what is your user name?
+    prompt: what is your user name?
     private: false
   
   - name: password
-    promt: emter password
+    prompt: emter password
     private: false
 
     tasks:
