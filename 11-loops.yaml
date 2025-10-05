@@ -6,7 +6,7 @@
   - name: print the names
     ansible.builtin.debug:
       msg: "Hello{{item }}" #item is reseverd for loops
-    loops:
+    loop:
     - Ram
     - Babu
     - mani
