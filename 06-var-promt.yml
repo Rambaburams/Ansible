@@ -10,7 +10,7 @@
     prompt: emter password
     private: false
 
-    tasks:
-    - name: print the credentials
-      ansible.builtin.debug:
-        msg: "Username is:{{username}},and password is:{{password}}"
+  tasks:
+  - name: print the credentials
+    ansible.builtin.debug:
+      msg: "Username is:{{username}},and password is:{{password}}"
