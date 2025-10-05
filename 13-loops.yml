@@ -6,9 +6,9 @@
   tasks:
   - name: update packages
     ansible.builtin.package:
-    - name: "{{name.item}}"
-    - state: "{{state.item}}"
-  loop:
-  - { name: "nginx", state: "absent"}
-  - { name: "mysql", state: "absent"}
-  - {name: "zip", state: "present"}
+      name: "{{name.item}}"
+      state: "{{state.item}}"
+    loop:
+    - { name: "nginx", state: "absent"}
+    - { name: "mysql", state: "absent"}
+    - {name: "zip", state: "present"}
