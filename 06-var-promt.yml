@@ -8,7 +8,7 @@
   
   - name: password
     prompt: emter password
-    private: false
+    private: true
 
   tasks:
   - name: print the credentials
