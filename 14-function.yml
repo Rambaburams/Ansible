@@ -3,7 +3,7 @@
   connection: local
   vars:
     technologies: DevOps,linux,ansible,git
-    ipaddress: "333.444.222.2222"
+    ipaddress: "135.4.2.222"
     tags:
       application: payment
       Environment: Dev
