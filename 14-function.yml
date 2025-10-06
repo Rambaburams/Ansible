@@ -21,12 +21,14 @@
     ansible.builtin.debug:
       msg: "list of technologies is:{{ technologies | split(',')}}"
   
-  # tasks:
-  # - name: map to list
-  #   ansible.builtin.debug:
-  #     msg: "tags are:{{tags | dict2items}}"
+  - name: map to list
+    ansible.builtin.debug:
+      msg: "tags are:{{tags | dict2items}}"
 
-  tasks:
   - name: list to dict or map
     ansible.builtin.debug:
       msg: "list of tags: {{listtags | items2dict}}"
+  
+  - name: read yaml and take it into variable
+    ansible.builtin.set_fact:
+      student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}"
