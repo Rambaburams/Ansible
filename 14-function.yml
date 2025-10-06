@@ -35,4 +35,4 @@
   #     student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}"
   - name: to check ipaddress is correct or not
     ansible.builtin.debug:
-      mag: "{{ipaddress | ansible.utils.ipv4}}"
+      msg: "{{ipaddress | ansible.utils.ipv4}}"
