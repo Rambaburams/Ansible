@@ -21,10 +21,10 @@
     ansible.builtin.debug:
       msg: "list of technologies is:{{ technologies | split(',')}}"
   
-  tasks:
-  - name: map to list
-    ansible.builtin.debug:
-      msg: "tags are:{{tags | dict2items}}"
+  # tasks:
+  # - name: map to list
+  #   ansible.builtin.debug:
+  #     msg: "tags are:{{tags | dict2items}}"
 
   tasks:
   - name: list to dict or map
