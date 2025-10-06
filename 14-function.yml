@@ -18,5 +18,5 @@
   
   tasks:
   - name: map to list
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "tags are:{{tags | dict2items}}"
