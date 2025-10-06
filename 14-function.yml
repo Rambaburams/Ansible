@@ -3,6 +3,7 @@
   connection: local
   vars:
     technologies: DevOps,linux,ansible,git
+    ipaddress: "333.444.222.2222"
     tags:
       application: payment
       Environment: Dev
@@ -32,3 +33,6 @@
   # - name: read yaml and take it into variable
   #   ansible.builtin.set_fact:
   #     student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}"
+  - name: to check ipaddress is correct or not
+    ansible.builtin.debug:
+      mag: "{{ipaddress | ansible.utils.ipv4}}"
