@@ -3,6 +3,9 @@
   connection: local
   vars:
     technologies: DevOps,linux,ansible,git
+    tags:
+      application: payment
+      Environment: Dev
 
   tasks:
   - name: default variable
@@ -11,4 +14,9 @@
   tasks:
   - name: string to list
     ansible.builtin.debug:
-      msg: "lise is:{{ technologies | split(',')}}"
+      msg: "list of technologies is:{{ technologies | split(',')}}"
+  
+  tasks:
+  - name: map to list
+    ansible.buitin.debug:
+      msg: "tags are:{{tags | dict2items}}"
