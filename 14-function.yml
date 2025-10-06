@@ -36,3 +36,11 @@
   - name: to check ipaddress is correct or not
     ansible.builtin.debug:
       msg: "{{ipaddress | ansible.utils.ipv4}}"
+
+  - name: grep for root
+    ansible.builtin.shell: cat /etc/passwd | grep root
+    register: redirect_output
+  
+  - name: print the redirect_output
+    ansible.builtin.debug:
+      msg: "{{ redirect_output }}"
