@@ -10,5 +10,5 @@
       msg: "{{name | default('Rambabu')}}"
   tasks:
   - name: string to list
-    ansible.builtin:debug:
+    ansible.builtin.debug:
       msg: "lise is:{{ technologies | split(',')}}"
