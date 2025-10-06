@@ -7,8 +7,10 @@
       application: payment
       Environment: Dev
     listtags:
-    - key: application
-    - value: dev
+    - key: Application
+      value: payment
+    - key: Environment
+      value: dev
 
   tasks:
   - name: default variable
