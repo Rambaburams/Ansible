@@ -27,4 +27,4 @@
   tasks:
   - name: list to dict or map
     ansible.builtin.debug:
-      msg: "list of tags: {{listtags | item2dict}}"
+      msg: "list of tags: {{listtags | items2dict}}"
