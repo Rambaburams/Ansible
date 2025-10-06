@@ -1,8 +1,14 @@
 - name: function
   hosts: local
   connection: local
-  # vars:
+  vars:
+    technologies: DevOps,linux,ansible,git
+
   tasks:
   - name: default variable
     ansible.builtin.debug:
       msg: "{{name | default('Rambabu')}}"
+  tasks:
+  - name: string to list
+    ansible.builtin:debug:
+      msg: "lise is:{{ technologies | split(',')}}"
